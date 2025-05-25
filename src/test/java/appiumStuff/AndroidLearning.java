@@ -14,8 +14,9 @@ public class AndroidLearning {
 
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Pixel 2 XL");
-//        options.setApp();
+        options.setApp("//Users//qaseemhasan//IdeaProjects//automation-utils//src//test//resources//ApiDemos-debug.apk");
 
-//        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), null);
+        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+        driver.quit();
     }
 }
